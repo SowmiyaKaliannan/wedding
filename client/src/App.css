@@ -1,0 +1,35 @@
+body {
+    background-color: #fdf6f9;
+  }
+  .navbar-brand {
+    font-family: 'Georgia', serif;
+    font-size: 2.0rem;
+    color: #ff69b4 !important;
+  }
+.nav-link {
+  color: #ff69b4 !important;
+  position: relative;
+  transition: color 0.3s ease;
+  text-decoration: none; 
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #ff1493;
+  transition: width 0.3s ease;
+}
+
+.nav-link:hover::after,
+.nav-link:focus::after {
+  width: 100%;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+  color: #ff1493 !important;
+}
